@@ -6,6 +6,7 @@
 
 ## 2, JSONとは
 JSON(JavaScript Object Notation)
+```
 {
     "name": "ogawa",
     "object" {
@@ -13,11 +14,14 @@ JSON(JavaScript Object Notation)
         "b": 3.3
     }
 }
+```
 
 ## 3, 天気を取得 tenki.py
 ## 4, 緯度経度から天気を取得 tenkibygeo.py
 ## 5, wifiAPから緯度経度取得 geo.py
 
-## 6, 4,5で　wifiAPから天気 
+## 6, 4,5でwifiAPから天気 
 
-## 次回　apiサーバー(WEBサービス))の作り方 か　LF/HFの計算
+
+
+次回　apiサーバー(WEBサービス))の作り方 か　LF/HFの計算
