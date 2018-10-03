@@ -28,8 +28,8 @@ Mozillaのページ
 [Wi-Fi positioning system - Wikipedia(en)](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system)   
 
 
-## 6, 4,5でwifiAPから天気 
-
+## 6, wifiAPから天気 
+4と5を合わせればできるはず   
 
 
 次回　apiサーバー(WEBサービス))の作り方 か　LF/HFの計算
