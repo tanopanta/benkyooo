@@ -23,7 +23,7 @@ JSON(JavaScript Object Notation)
 ## 5, wifiAPから緯度経度取得 geo.py
 Mozillaのページ   
 [Mozilla Location Service APIs](https://mozilla.github.io/ichnaea/api/geolocate.html)   
-[Algorithms](https://mozilla.github.io/ichnaea/algo/index.html)　　　
+[Algorithms](https://mozilla.github.io/ichnaea/algo/index.html)   
 概念   
 [Wi-Fi positioning system - Wikipedia(en)](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system)   
 
