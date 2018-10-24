@@ -13,7 +13,7 @@ Pythonで簡単に使えるウェブアプリケーションフレームワー�
 インストールが終わったら以下のサンプルを試してみる。これを実行するとFlask内蔵のWEBサーバーが立ち上がり、GETメソッドによりアクセスできる。例えば(http://127.0.0.1:5000) にアクセスすれば文字が表示される。   
 
 一般にウェブフレームワークにはルーティングという機能があり(@app.route()に対応)、これによりURLと処理との対応付けが簡単にできる。Flaskの場合、returnで何かの文字列を返すことで動作する。
-```
+```Python
 #APIサーバー基本形
 from flask import Flask, request
 app = Flask(__name__)
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0') #host='0.0.0.0'で外からのアクセスを受けつける
 ```
 プログラムからアクセスする場合
-```
+```Python
 import requests
 
 url = "http://127.0.0.1:5000"
@@ -48,7 +48,7 @@ print(response.text)
 ## 3, POSTメソッドを利用する。  
 ２ではHTTPのGETメソッドを利用したが、センサーデータの送信等にはPOSTメソッドとJSONの組み合わせを使う場合が多い。POSTメソッドを利用するのは以下のようになる。   
 ポイントとしては **@app.route()** の引数で **methods=['POST']** と指定しメソッドをPOSTに限定する点と、**request.json**で受け取ったJSONを取得する点。
-```
+```Python
 #POST(サーバー)
 #post server
 
@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
 ```
 プログラムからアクセスする。JSONを文字列として送信。
-```
+```Python
 #POST(クライアント)
 import requests
 import json
@@ -94,7 +94,7 @@ print(response.text)
 ## 4, 実例   
 実例として、ラズパイで10秒ごとにセンサーデータを得てそれをPOSTメソッドによりサーバで保存するものを作る。   
 センサーは、各自好きなものを使えばよい。サンプルとしてはラズパイのCPUの温度を取得している。
-```
+```Python
 #(クライアント)
 from datetime import datetime
 import time
@@ -123,7 +123,7 @@ for i in range(10):
 
 ```
 サーバー側。さっきのサンプルの一部を変更
-```
+```Python
 #サーバー側
 
 from flask import Flask, request, Response
