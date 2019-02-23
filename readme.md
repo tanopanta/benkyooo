@@ -6,13 +6,14 @@ WEBAPIの仕組みを使って天気や位置情報を得る。
 感情のデータを集める。   
 1. [APIの勉強２～サーバー編～](https://github.com/tanopanta/benkyooo/tree/master/api_server)   
 APIサーバーにセンサーデータを送る。   
+1. [心拍変動解析(LF/HF)](https://github.com/tanopanta/benkyooo/tree/master/lfhf)   
 
 ## リンク集
 心拍関連   
 1. [ストレスと自律神経の科学](http://hclab.sakura.ne.jp/index.html)   
 LF/HFの計算等   
 1. [Python: SciPy のパワースペクトル密度推定の関数](https://org-technology.com/posts/power-spectral-density.html)   
-1. [Gigazineで「心拍」を検索](https://gigazine.net/search/results/6324e15c812a9d34ab8e95bb4a6e099c/)
+1. [Gigazineで「心拍」を検索](https://gigazine.net/)
 
 M5Stack関連   
 1. [Arduino core for the ESP32 のインストール方法](https://www.mgo-tec.com/arduino-core-esp32-install)   
