@@ -14,6 +14,8 @@ LF/HFの計算等
 1. [Python: SciPy のパワースペクトル密度推定の関数](https://org-technology.com/posts/power-spectral-density.html)   
 1. [Gigazineで「心拍」を検索](https://gigazine.net/search/results/6324e15c812a9d34ab8e95bb4a6e099c/)
 
-プログラム   
+M5Stack関連   
 1. [Arduino core for the ESP32 のインストール方法](https://www.mgo-tec.com/arduino-core-esp32-install)   
 M5Stack開発環境(Arduino)の準備   
+1. [EspExceptionDecoder](https://github.com/me-no-dev/EspExceptionDecoder)   
+実行時エラーの確認ツール   
