@@ -12,7 +12,8 @@ fs = 250 #脈波のサンプリング周波数
 hokan_fs = 8 #補間後の再サンプリング周波数
 fftsize = 2 ** 14
 
-data = np.loadtxt("PPG_250Hz_120s_male22.csv")
+data = np.loadtxt("PPG_250Hz_120s_male22_stress.csv")
+#data = np.loadtxt("PPG_250Hz_120s_male22_relax.csv")
 
 #前処理-------------------------------
 # DC成分カット
@@ -22,7 +23,7 @@ lpf_fil = sg.firwin(33, 2.0 / (fs/2.0), window="hamming")
 data = sg.lfilter(lpf_fil, 1, data)
 
 #ピーク検出-------------------------
-peak_indexes, _ = sg.find_peaks(data, height=0, distance=fs//3)
+peak_indexes, _ = sg.find_peaks(data, height=0, distance=fs//2.2)
  
 plt.subplot(311)
 plt.title("Raw Wave and Peaks")
